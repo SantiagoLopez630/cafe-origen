@@ -15,6 +15,7 @@
             <a href="#carta">Carta</a>
             <a href="#origen">Nuestro origen</a>
             <a href="#visitanos">Visítanos</a>
+            <a href="#pedido">Mi pedido <span id="contador-pedido" class="contador">0</span></a>
         </nav>
     </header>
 
@@ -38,7 +39,22 @@
         <!-- Carta: JavaScript la llena con los productos -->
         <section id="carta" class="carta">
             <h2>La carta de hoy</h2>
+            <p class="vistas">
+                <button id="ver-todo" class="vista activa" type="button">Toda la carta</button>
+                <button id="ver-favoritos" class="vista" type="button">♥ Favoritos (<span id="contador-favoritos">0</span>)</button>
+            </p>
             <ul id="menu" class="menu"></ul>
+        </section>
+
+        <!-- Pedido: JavaScript lo llena cada vez que la persona hace clic -->
+        <section id="pedido" class="pedido">
+            <h2>Mi pedido</h2>
+            <ul id="lista-pedido" class="lista-pedido"></ul>
+            <p class="total">Total: <span id="total-pedido">$0</span></p>
+            <p class="acciones">
+                <button id="vaciar" class="boton-secundario" type="button">Vaciar</button>
+                <button id="confirmar" class="boton" type="button">Confirmar pedido</button>
+            </p>
         </section>
 
         <section id="origen" class="origen">
